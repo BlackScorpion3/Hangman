@@ -1,0 +1,160 @@
+@import url("bootstrap.css");
+
+body {
+    background-color: #e7e7e7;
+}
+
+.container {
+    padding: 20px 20px 20px;
+    margin-top: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #cccccc;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+}
+
+.form-actions  {
+    padding: 20px 20px 0px 20px
+    background-color: #eeeeee;
+    border: 1px solid #dddddd;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.input-append,
+.input-prepend {
+    margin-bottom: 5px;
+}
+
+.input-append .add-on,
+.input-prepend .add-on,
+.input-append .btn,
+.input-prepend .btn {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.table-bordered {
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.btn {
+    margin-left: 6px;
+    *margin-left: 6px;
+}
+
+#hangmanStage {
+    position: relative;
+    float: right;
+    margin-right: 100px;
+    background: url('../img/hangmanStage.png') no-repeat;
+    width: 200px;
+    height: 260px;
+}
+
+#hangmanStage > div {
+    display: none;
+    position: absolute;
+}
+
+#hangmanRope {
+    top: 33px;
+    left: 126px;
+    background: url('../img/hangmanRope.png') no-repeat;
+    width: 26px;
+    height: 54px;
+    z-index: 10;
+}
+
+#hangmanHead {
+    top: 45px;
+    left: 121px;
+    background: url('../img/hangmanHead.png') no-repeat;
+    width: 36px;
+    height: 39px;
+    z-index: 15;
+}
+
+#hangmanBody {
+    top: 80px;
+    left: 120px;
+    background: url('../img/hangmanBody.png') no-repeat;
+    width: 39px;
+    height: 81px;
+    z-index: 5;
+}
+
+#hangmanRightArm {
+    top: 80px;
+    left: 104px;
+    background: url('../img/hangmanRightArm.png') no-repeat;
+    width: 30px;
+    height: 77px;
+}
+
+#hangmanLeftArm {
+    top: 80px;
+    left: 145px;
+    background: url('../img/hangmanLeftArm.png') no-repeat;
+    width: 30px;
+    height: 77px;
+}
+
+#hangmanRightLeg {
+    top: 147px;
+    left: 120px;
+    background: url('../img/hangmanRightLeg.png') no-repeat;
+    width: 17px;
+    height: 94px;
+}
+
+#hangmanLeftLeg {
+    top: 147px;
+    left: 142px;
+    background: url('../img/hangmanLeftLeg.png') no-repeat;
+    width: 17px;
+    height: 94px;
+}
+
+#hangmanDead {
+    top: 56px;
+    left: 128px;
+    background: url('../img/hangmanDead.png') no-repeat;
+    width: 22px;
+    height: 9px;
+    z-index: 20;
+}
+
+#hangmanWord {
+    margin-top: 100px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+.hangman-word {
+    float: left;
+    margin-right: 10px;
+    border-bottom: 2px solid;
+    width: 20px;
+    height: 20px;
+}
+
+.hangman {
+    color: #245BFF;
+}
+
+.accepted {
+    background-color: #33CC33;
+}
+
+.declined {
+    background-color: #FF3300;
+}

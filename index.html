@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Hangman</title>
+        <link href="css/main.css" rel="stylesheet">
+        <script src="js/lib/jQuery/jQuery.js"></script>
+        <script data-main="js/bootstrap" src="js/lib/require/require.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Hangman</h1>
+            <div class="form-actions">
+                <div id="hangmanStage">
+                    <div id="hangmanRope" data-hang="1"></div>
+                    <div id="hangmanDead" data-hang="8"></div>
+                    <div id="hangmanHead" data-hang="2"></div>
+                    <div id="hangmanBody" data-hang="3"></div>
+                    <div id="hangmanRightArm" data-hang="4"></div>
+                    <div id="hangmanLeftArm" data-hang="5"></div>
+                    <div id="hangmanRightLeg" data-hang="6"></div>
+                    <div id="hangmanLeftLeg" data-hang="7"></div>
+                </div>
+                
+                <div class="input-prepend input-append">
+                    <span class="add-on">Letter</span>
+                    <input class="span2" id="letter" maxlength="1" type="text" placeholder="Enter a Letter">
+                </div>
+
+                <div class="btn-toolbar">
+                    <div class="btn-group">
+                        <button class="btn" id="giveLetterToHangman">Give Your Letter To The <span class="hangman">Hangman</span></button>
+                    </div>
+                </div>
+                
+                <div class="btn-toolbar">
+                    <div class="btn-group">
+                        <button class="btn" id="resetHangman">Reset <span class="hangman">Hangman</span></button>
+                    </div>
+                </div>
+                
+                <div id="hangmanWord"></div>
+            </div>
+            <div id="hangmanContainer"></div>
+        </div>
+    </body>
+</html>
+
